@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Palle Vidiya | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="logo">Vidiya Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="Home.jpeg" alt="Palle vidiya" class="profile-pic" />
+      <h2>Hello, I'm <span class="highlight" id="typing"></span></h2>
+      <p>A passionate Web Developer & Designer</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm <strong>Palle vidiya</strong>, a creative front-end web developer who loves designing 
+      modern, responsive, and interactive websites. I enjoy turning ideas into reality 
+      through clean and efficient code using HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <!-- Only One Project -->
+  <section id="project">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="online voting system img.jpg" alt="Project" />
+        <h3>Online voting System</h3>
+        <p>The Online Voting System is a web-based platform that allows users to cast their votes online in a secure and convenient way. This website aims to digitalize the traditional voting process, making it faster, easier, and more accessible from anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2>My Resume</h2>
+    <p>Want to know more about my skills and experience?</p>
+    <a href="PalleVidiya_Resume.pdf" target="_blank" class="resume-btn">📄 View / Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      📧 <strong>pallevidiya26@gamil.com</strong><br />
+      📱 <strong>+91 9381644052</strong><br />
+      💬 <a href="https://www.instagram.com/your_insta_id/" target="_blank" class="insta-link">@artflowstudio_06</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Palle Vidiya| All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

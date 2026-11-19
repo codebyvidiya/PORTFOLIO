@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Animated Gradient Background */
+body {
+  background: linear-gradient(-45deg, #00d4ff, #0048ff, #8e2de2, #ff00c8);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(6px);
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00d4ff;
+}
+
+/* Theme Toggle */
+.theme-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.hero-content h2 {
+  font-size: 2.8em;
+}
+
+.highlight {
+  color: #00d4ff;
+}
+
+button {
+  padding: 12px 25px;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00d4ff;
+  color: #fff;
+}
+
+/* Section */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 30px;
+  border-radius: 15px;
+}
+
+/* One Project Card */
+.project-grid {
+  display: flex;
+  justify-content: center;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00d4ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Instagram Link */
+.insta-link {
+  color: #ff80df;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.insta-link:hover {
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* Light Mode */
+body.light-mode {
+  background: #f7f7f7;
+  color: #333;
+}
+
+body.light-mode header {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-mode section {
+  background: #fff;
+}
+
+body.light-mode nav a {
+  color: #333;
+}
+
+body.light-mode nav a:hover {
+  color: #007bff;
+}
+
+body.light-mode .resume-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+body.light-mode .insta-link {
+  color: #e1306c;
+}
+
+
